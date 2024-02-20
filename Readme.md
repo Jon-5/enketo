@@ -1,4 +1,12 @@
-0. Cloned, forked, deleted workflows for CI and GitHub, deleted enketo-express files and references
+0. Setup a dev-container with easy MS VSCode Docker extension, Node:20 with Typescript support on Debian Bookworm to match Enketo current Enketo dev environments.
+```
+{
+	"name": "Node.js & TypeScript",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm"
+}
+```
+Cloned, forked, deleted workflows for CI and GitHub, deleted enketo-express files and references
+
 1. at base folder of enketo_app `yarn install`
 warnings:
 ```

@@ -41,5 +41,8 @@
 
     // Code navigation
     "javascript.referencesCodeLens.enabled": true,
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }
