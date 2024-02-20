@@ -8,7 +8,6 @@
             "packages/openrosa-xpath-evaluator",
             "packages/enketo-transformer",
             "packages/enketo-core",
-            "packages/enketo-express",
             "examples/*"
         ],
         "nohoist": [

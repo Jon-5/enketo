@@ -290,9 +290,7 @@
 
         {
             "files": [
-                "packages/enketo-core/**/*",
-                "packages/enketo-express/**/*"
-            ],
+                "packages/enketo-core/**/*"            ],
 
             "rules": {
                 "import/no-unresolved": [
@@ -462,125 +460,6 @@
                                 "packageDir": [".", "./packages/enketo-core"]
                             }
                         ]
-                    }
-                }
-            ]
-        },
-
-        {
-            "files": ["packages/enketo-express/**/*"],
-
-            "rules": {
-                "array-callback-return": "warn",
-                "no-promise-executor-return": "warn",
-                "no-restricted-globals": "warn",
-                "import/no-dynamic-require": "warn"
-            },
-
-            "overrides": [
-                {
-                    "files": [
-                        "packages/enketo-express/i18next-parser.config.js",
-                        "packages/enketo-express/jsdoc.config.js",
-                        "packages/enketo-express/config/build.js",
-                        "packages/enketo-express/config/express.js",
-                        "packages/enketo-express/scripts/build.js",
-                        "packages/enketo-express/test/server/**/*.js",
-                        "packages/enketo-express/tools/**/*.js"
-                    ],
-
-                    "env": {
-                        "node": true,
-                        "commonjs": true
-                    },
-
-                    "ecmaFeatures": {
-                        "modules": false
-                    },
-
-                    "rules": {
-                        "import/no-extraneous-dependencies": [
-                            "error",
-                            {
-                                "devDependencies": true,
-                                "packageDir": [".", "./packages/enketo-express"]
-                            }
-                        ]
-                    }
-                },
-
-                {
-                    "files": [
-                        "packages/enketo-express/app.js",
-                        "packages/enketo-express/app/**/*.js",
-                        "packages/enketo-express/test/server/**/*.js",
-                        "packages/enketo-express/tools/redis-repl"
-                    ],
-                    "excludedFiles": [
-                        "packages/enketo-express/app/views/**/*.js"
-                    ],
-
-                    "env": {
-                        "commonjs": true,
-                        "node": true
-                    },
-
-                    "ecmaFeatures": { "modules": false }
-                },
-
-                {
-                    "files": [
-                        "packages/enketo-express/public/**/*",
-                        "packages/enketo-express/app/views/**/*.js",
-                        "packages/enketo-express/test/client/**/*.js"
-                    ],
-
-                    "env": { "browser": true }
-                },
-
-                {
-                    "files": [
-                        "packages/enketo-express/public/js/src/module/offline-app-worker-partial.js"
-                    ],
-                    "globals": {
-                        "self": true,
-                        "version": true,
-                        "resources": true
-                    }
-                },
-
-                {
-                    "files": [
-                        "packages/enketo-express/test/client/**/*.js",
-                        "packages/enketo-express/test/server/**/*.js"
-                    ],
-
-                    "env": { "mocha": true },
-
-                    "globals": {
-                        "expect": true,
-                        "sinon": true
-                    },
-
-                    "rules": {
-                        "no-console": "off",
-                        "import/no-extraneous-dependencies": [
-                            "error",
-                            {
-                                "devDependencies": true,
-                                "packageDir": [".", "./packages/enketo-express"]
-                            }
-                        ]
-                    }
-                },
-
-                {
-                    "files": ["packages/enketo-express/**/*.mjs"],
-                    "parser": "@babel/eslint-parser",
-                    "parserOptions": {
-                        "sourceType": "module",
-                        "ecmaVersion": 2021,
-                        "requireConfigFile": false
                     }
                 }
             ]
